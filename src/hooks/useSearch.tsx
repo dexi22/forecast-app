@@ -7,12 +7,13 @@ export default function useSearch() {
   useEffect(() => {
     const query = new URLSearchParams(window.location.search);
     setSearchContent(query.get("city") || "");
-
-    isInitialMount.current = false;
   }, []);
 
   useEffect(() => {
-    if (isInitialMount.current) return;
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      return;
+    }
 
     const newUrl = new URL(window.location.href);
 
