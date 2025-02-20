@@ -2,7 +2,7 @@
 
 A modern weather forecast application built as a learning project using TypeScript, React, Vite, and TailwindCSS. The app provides hour-by-hour and weekly weather forecasts with a clean, modern UI.
 
-![Live demo here](forecast-app-henna.vercel.app)
+[Live demo here](https://forecast-app-henna.vercel.app)
 
 ![Forecast App Screenshot](screenshots/app.png)
 
