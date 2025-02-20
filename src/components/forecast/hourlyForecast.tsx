@@ -24,7 +24,7 @@ export default function HourlyForecast({
   }, [isExpanded, temperatures]);
 
   return (
-    <Card>
+    <Card className="flex flex-col gap-2">
       <ul
         className={clsx(
           "gap-2 grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 transition-all duration-300 ease-in-out",
