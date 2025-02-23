@@ -31,7 +31,12 @@ export default function InfoCards({
         value={`${windSpeed} km/h`}
         extra={windDirectionName}
       />
-      <InfoCard icon={<Sun />} label="Sunrise / sunset" value={`${sunrise} - ${sunset}`} />
+      <InfoCard
+        icon={<Sun />}
+        label="Sunrise / sunset"
+        value={`${sunrise} - ${sunset}`}
+        extra="UTC"
+      />
     </div>
   );
 }
